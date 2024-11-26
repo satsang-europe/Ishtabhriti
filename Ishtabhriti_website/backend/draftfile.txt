@@ -1,0 +1,16 @@
+const recipients = [
+  {
+    email: "admin_europe@satsangeurope.org",
+    // email: "sensoumya94@gmail.com",
+  },
+];
+
+client
+  .send({
+    from: sender,
+    to: recipients,
+    subject: "Testing for Ishtabhriti Application",
+    html: "Congrats for sending test email with Mailtrap!",
+    category: "Integration Test",
+  })
+  .then(console.log, console.error);
